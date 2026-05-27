@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СтудентМаркет | Без JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- НЕВИДИМЫЕ ПЕРЕКЛЮЧАТЕЛИ СТРАНИЦ -->
+    <input type="radio" name="page-nav" id="tab-home" checked>
+    <input type="radio" name="page-nav" id="tab-catalog">
+    <input type="radio" name="page-nav" id="tab-about">
+    <input type="radio" name="page-nav" id="tab-cart">
+
+    <!-- ШАПКА САЙТА -->
+    <header>
+        <div class="header-container">
+            <label for="tab-home" class="logo">🎓 СтудентМаркет</label>
+            <nav>
+                <label for="tab-home" class="nav-btn btn-home">Главная</label>
+                <label for="tab-catalog" class="nav-btn btn-catalog">Каталог</label>
+                <label for="tab-about" class="nav-btn btn-about">О нас</label>
+            </nav>
+            <div class="cart-status">
+                <label for="tab-cart" class="nav-btn btn-cart">🛒 Корзина</label>
+            </div>
+        </div>
+    </header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main class="container">
+
+        <!-- РАЗДЕЛ: ГЛАВНАЯ СТРАНИЦА -->
+        <section class="page-section section-home">
+            <div class="hero">
+                <div class="hero-content">
+                    <h2>Все для успешной учебы в одном месте</h2>
+                    <p>Скидки первокурсникам и отличные цены для каждого!</p>
+                    <label for="tab-catalog" class="btn">Перейти в каталог</label>
+                </div>
+            </div>
+            <div class="features">
+                <div class="feature-card">⚡ Быстрая доставка в общежитие</div>
+                <div class="feature-card">💰 Низкие цены для студентов</div>
+                <div class="feature-card">⭐ Качественные материалы</div>
+            </div>
+        </section>
+
+        <!-- РАЗДЕЛ: КАТАЛОГ -->
+        <section class="page-section section-catalog">
+            <h2 class="page-title">Каталог товаров</h2>
+            <div class="product-grid">
+                
+                <div class="product-card">
+                    <img src="2.jpg" alt="Умный блокнот">
+                    <h3>Умный блокнот</h3>
+                    <div class="price">650 руб.</div>
+                    <label for="tab-cart" class="btn">Купить</label>
+                </div>
+
+                <div class="product-card">
+                    <img src="3.jpg" alt="Беспроводная мышь">
+                    <h3>Беспроводная мышь</h3>
+                    <div class="price">1200 руб.</div>
+                    <label for="tab-cart" class="btn">Купить</label>
+                </div>
+
+                <div class="product-card">
+                    <img src="1.webp" alt="Настольная лампа">
+                    <h3>Настольная лампа</h3>
+                    <div class="price">1500 руб.</div>
+                    <label for="tab-cart" class="btn">Купить</label>
+                </div>
+
+                <div class="product-card">
+                    <img src="4.jpg" alt="Термокружка">
+                    <h3>Термокружка</h3>
+                    <div class="price">850 руб.</div>
+                    <label for="tab-cart" class="btn">Купить</label>
+                </div>
+
+                <div class="product-card">
+                    <img src="5.jpg" alt="Рюкзак">
+                    <h3>Рюкзак для ноутбука</h3>
+                    <div class="price">2900 руб.</div>
+                    <label for="tab-cart" class="btn">Купить</label>
+                </div>
+
+                <div class="product-card">
+                    <img src="6.jpg" alt="Маркеры">
+                    <h3>Набор маркеров</h3>
+                    <div class="price">450 руб.</div>
+                    <label for="tab-cart" class="btn">Купить</label>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- РАЗДЕЛ: О НАС -->
+        <section class="page-section section-about">
+            <h2>О нашем проекте</h2>
+            <p>Приветствуем в «СтудентМаркет»! Этот интернет-магазин был создан в рамках учебного студенческого задания. Мы хотели сделать удобный сайт, где каждый студент сможет найти полезные вещи для учебы.</p>
+            <h3>Наша миссия</h3>
+            <p>Помогать грызть гранит науки с комфортом и без лишних трат. Мы выбираем только самые нужные товары — от канцелярии до гаджетов.</p>
+            <h3>Где мы находимся?</h3>
+            <p>Наш главный офис — это третья парта у окна в компьютерном классе. Но мы принимаем заказы онлайн 24/7!</p>
+        </section>
+
+        <!-- РАЗДЕЛ: КОРЗИНА -->
+        <section class="page-section section-cart">
+            <h2 class="page-title">Ваша корзина</h2>
+            <div class="cart-wrapper">
+                <div class="cart-items-list">
+                    <div class="cart-item-row">
+                        <span><strong>Умный блокнот</strong></span>
+                        <span>650 руб.</span>
+                    </div>
+                    <div class="cart-item-row">
+                        <span><strong>Термокружка</strong></span>
+                        <span>850 руб.</span>
+                    </div>
+                </div>
+                <div class="order-form">
+                    <h3>Оформить заказ</h3>
+                    <div class="total-price">Итого: 1500 руб.</div>
+                    <form action="#" method="POST">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <button type="submit" class="btn" style="width: 100%;">Отправить заказ</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ПОДВАЛ САЙТА -->
+    <footer>
+        <p>© 2026 СтудентМаркет. Учебный проект.</p>
+    </footer>
+
+</body>
+</html>
